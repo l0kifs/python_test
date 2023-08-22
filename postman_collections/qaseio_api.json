@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "e763879b-1c30-4e87-9cfc-78e91b978ae9",
+		"name": "qase.io API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all runs",
+			"_postman_id": "60cdfc76-a2da-4504-a5d8-74acc2e2f341",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "{{auth_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/v1/run/{{proj_code}}?limit=10&offset=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"run",
+						"{{proj_code}}"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all environments",
+			"_postman_id": "e413c756-aa78-4ac8-9722-56b1d8c81b55",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "{{auth_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/v1/environment/{{proj_code}}?limit=10&offset=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"environment",
+						"{{proj_code}}"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all milestones",
+			"_postman_id": "ba618147-5e70-4885-84fb-908a93e2de00",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "{{auth_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/v1/milestone/{{proj_code}}?limit=10&offset=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"milestone",
+						"{{proj_code}}"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all cases",
+			"_postman_id": "9dea24b4-bb27-4b5f-932e-af5e95a71fa2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "{{auth_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/v1/case/{{proj_code}}?limit=10&offset=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"case",
+						"{{proj_code}}"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
